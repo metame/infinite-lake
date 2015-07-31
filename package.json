@@ -1,0 +1,16 @@
+{
+  "name": "diehard",
+  "version": "0.1.0",
+  "description": "getting the right volume with 2 buckets and an infinite lake",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Michael J Erwin <michaeljameserwin@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "die-hard",
+  "version": "0.1.0",
+  "authors": [
+    "Michael J Erwin <michaeljameserwin@gmail.com>"
+  ],
+  "description": "getting the right volume with 2 buckets and an infinite lake",
+  "main": "/app/js/infinitelake.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

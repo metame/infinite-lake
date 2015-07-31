@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="infiniteLake">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="The Infinite Lake" content="getting the right volume with 2 buckets and an infinite lake">
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+        <title>The Infinite Lake</title>
+        <link rel="css/stylesheet" src="/bower_components/bootstrap/dist/bootstrap.css" />
+    </head>
+    <body>
+    
+    <div ng-controller="calculateCtrl">
+        <input type="text" ng-model="target" name="target" placeholder="How much water do you need?" />
+        <input type="text" ng-model="bucket1" name="bucket1" placeholder="How big is the first bucket?" />
+        <input type="text" ng-model="bucket2" name="bucket2" placeholder="How big is the second bucket?" />
+        <button ng-click="calculate()"> {{ btntext }} </button>
+        
+        <p>{{ message }}</p>
+        <p>{{ result }}</p>
+    </div>
+    
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/js/infinite-lake.js"></script>
+    </body>
+</html>
