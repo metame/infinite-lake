@@ -5,17 +5,27 @@
         <meta name="The Infinite Lake" content="getting the right volume with 2 buckets and an infinite lake">
         <meta http-equiv="content-type" content="text/html;charset=UTF-8">
         <title>The Infinite Lake</title>
-        <link rel="css/stylesheet" src="/bower_components/bootstrap/dist/bootstrap.css" />
+        <!--<link rel="stylesheet" href="/bower_components/bootstrap/dist/bootstrap.css" />-->
+        <link rel="stylesheet" href="/css/main.css" />
     </head>
     <body>
     
     <div ng-controller="calculateCtrl">
         <input type="text" ng-model="target" name="target" placeholder="How much water do you need?" />
+        <br />
         <input type="text" ng-model="bucket1" name="bucket1" placeholder="How big is the first bucket?" />
+        <br />
         <input type="text" ng-model="bucket2" name="bucket2" placeholder="How big is the second bucket?" />
+        <br />
         <button ng-click="calculate()"> {{ btntext }} </button>
         
         <p>{{ message }}</p>
+    </div>
+    
+    <div ng-controller="stepsCtrl">
+        <ul id="steps">
+            <li ng-repeat="step in steps"></li>
+        </ul>
         <p>{{ result }}</p>
     </div>
     
