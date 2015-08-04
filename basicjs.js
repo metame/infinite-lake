@@ -1,3 +1,6 @@
+// Node.js / Console version
+// run it with `node basicjs t b1 b2'
+
 var target = parseInt(process.argv[2]),
     bucket1 = parseInt(process.argv[3]),
     bucket2 = parseInt(process.argv[4]),
@@ -13,18 +16,6 @@ if(target > bucket1 && target > bucket2){  // target is larger than buckets
     if( target % gcd(bucket1, bucket2) !== 0 ){
         console.log(impossible);
     } else {
-    // compare bucket sizes
-    // if(bucket1 === bucket2){ // bucket sizes are equal
-    //     if(bucket1 === target){ // target reached
-            
-    //         console.log("Fill up the first bucket with " + bucket1 + "L of water");  
-            
-            
-    //         console.log("You have " + target + "L of water!");
-    //     } else {
-    //         console.log(impossible);
-    //     }
-    // } else { // bucket sizes aren't equal
     
         // create bucket object
         var bucket = {};

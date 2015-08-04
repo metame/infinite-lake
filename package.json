@@ -1,6 +1,6 @@
 {
   "name": "diehard",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "getting the right volume with 2 buckets and an infinite lake",
   "main": "server.js",
   "scripts": {

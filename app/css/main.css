@@ -1,18 +1,14 @@
 body {
-  background-color: #eee;
+  background-color: #eee; }
+
+.container {
+  text-align: center;
+  margin-top: 10px; }
+
+p, li {
   font-size: 1.5em; }
 
-input, button {
-  width: 25%;
-  height: 2em;
-  margin: 5px 0 5px 0;
-  border-radius: 5px; }
-
-button {
-  background-color: #cde;
-  border-color: #cde; }
-
-#steps {
-  list-style: none; }
+.msg {
+  margin-top: 10px; }
 
 /*# sourceMappingURL=main.css.map */
