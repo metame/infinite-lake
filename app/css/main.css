@@ -17,6 +17,19 @@ a {
 table {
   text-align: left; }
 
+.bucket {
+  text-align: center;
+  background-image: url(../images/bucket.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%; }
+
+.bucketVol {
+  background-color: rgba(238, 239, 216, 0.9);
+  border-radius: 4px 0 4px 0;
+  color: #378df4;
+  padding: 0 2px 0 2px; }
+
 @media (min-width: 768px) {
   form {
     margin-top: 5%; }

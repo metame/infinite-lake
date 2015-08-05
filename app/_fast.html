@@ -10,8 +10,8 @@
 
 <tr ng-repeat="step in fastSteps track by $index">
     <td>{{ step.description }}</td>
-    <td>{{ step.lgVol }}</td>
-    <td>{{ step.smVol }}</td>
+    <td class="bucket"><span class="bucketVol">{{ step.lgVol }}</span></td>
+    <td class="bucket"><span class="bucketVol">{{ step.smVol }}</span></td>
 </tr>
 
 </table>

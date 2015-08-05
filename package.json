@@ -1,6 +1,6 @@
 {
   "name": "diehard",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "getting the right volume with 2 buckets and an infinite lake",
   "main": "server.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0"
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.3.4"
   }
 }
