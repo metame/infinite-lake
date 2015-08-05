@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="The Infinite Lake" content="getting the right volume with 2 buckets and an infinite lake">
         <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+        <link rel="icon" type="image/png" href="/images/bucket.ico">
         <title>The Infinite Lake</title>
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="/css/main.css" />
@@ -15,29 +16,25 @@
                 
                 <h2 class="center">Two Buckets <small>are all you need to get <em>n</em>L of water from an infinite lake</small></h2>
                 
-                <div ng-controller="calculateCtrl">
-                    <form ng-hide="fastSteps[0]">
-                        <input class="form-control" type="text" ng-model="target" name="target" placeholder="How much water do you want?" />
+                <div ng-controller="mainCtrl">
+                    <form novalidate ng-hide="hideForm" ng-submit="calculate()">
+                        <input class="input-lg form-control numInput" type="number" ng-model="target" name="target" placeholder="How much water do you want?" />
                         <br />
-                        <input class="form-control" type="text" ng-model="bucket1" name="bucket1" placeholder="How big is the first bucket?" />
+                        <input class="input-lg form-control numInput" type="number" ng-model="bucket1" name="bucket1" placeholder="How big is the first bucket?" />
                         <br />
-                        <input class="form-control" type="text" ng-model="bucket2" name="bucket2" placeholder="How big is the second bucket?" />
+                        <input class="input-lg form-control numInput" type="number" ng-model="bucket2" name="bucket2" placeholder="How big is the second bucket?" />
                         <br />
-                        <button class="btn btn-default btn-lg" ng-click="calculate()"> Calculate </button>
+                        <button class="btn btn-default btn-lg" type="submit"> Calculate </button>
                     </form>
                     
                     <p class="msg">{{ requirements }}</p>
-                    <p class="msg text-primary">{{ message }}</p>
+                    <p class="msg text-primary">{{ notice }}</p>
+                    <p class="msg text-danger">{{ error }}</p>
                 
                 
-                    <div>
-                        <ul id="steps" class="list-unstyled">
-                            <li ng-repeat="step in fastSteps track by $index">{{ step }}</li>
-                        </ul>
-                        <p class="text-primary">{{ result }}</p>
-                    </div>
+                    <div ui-view></div>
                     
-                    <button class="btn btn-primary btn-lg" ng-click="tryagain()" ng-show="result">Try Again</button>
+                    <button class="btn btn-primary btn-lg" ng-click="tryagain()" ng-show="hideForm">Try Again</button>
                 
                 </div>
                 
@@ -47,7 +44,8 @@
     
     <script src="/js/algorithm.js"></script>
     
-    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/js/angular.js"></script>
+    <script src="/js/angular-ui-router.js"></script>
     <script src="/js/infinite-lake.js"></script>
     <script src="/js/controllers.js"></script>
     <script src="/js/services.js"></script>

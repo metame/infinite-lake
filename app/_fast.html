@@ -1,0 +1,19 @@
+<p class="msg text-primary">{{ message }} <a ui-sref="slowWay">View the slow way instead...</a></p>
+
+<table class="table table-striped table-hover" ng-show="fastSteps[0]">
+    
+<thead>
+    <th>Step by Step</th>
+    <th>{{ lgBucket }}L Bucket</th>
+    <th>{{ smBucket }}L Bucket</th>
+</thead>
+
+<tr ng-repeat="step in fastSteps track by $index">
+    <td>{{ step.description }}</td>
+    <td>{{ step.lgVol }}</td>
+    <td>{{ step.smVol }}</td>
+</tr>
+
+</table>
+
+<p class="text-primary">{{ result }}</p>

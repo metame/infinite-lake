@@ -7,10 +7,34 @@ body {
     margin-top: 10px;
 }
 
-p, li {
-    font-size: 1.5em;
+p, table {
+    font-size: 1em;
 }
 
 .msg {
     margin-top: 10px;
+}
+
+a {
+    font-style: italic;
+}
+
+table {
+    text-align: left;
+}
+
+@media (min-width: 768px){
+    form {
+        margin-top: 5%;
+    }
+    
+    p, table {
+        font-size: 1.5em;
+    }
+    
+    .numInput {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
