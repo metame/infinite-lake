@@ -5,7 +5,7 @@ var express = require('express'),
 
 // Place all angular files in /app directory
 app.use(express.static(path.join(__dirname,'/app')));
-// Require any bower dependencies in html files at 'localhost:port/bower_components/*'
+// Require any bower dependencies in html files at 'host:port/bower_components/*'
 app.use('/bower_components', express.static(path.join(__dirname,'/bower_components')));
 
 app.listen(port, function(){

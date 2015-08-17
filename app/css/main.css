@@ -5,6 +5,16 @@ body {
   text-align: center;
   margin-top: 10px; }
 
+#title #first {
+  background: -webkit-linear-gradient(#4BC7F0, #030E2E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#title #second {
+  background: -webkit-linear-gradient(left, #E7AC00, #582A00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 p, table {
   font-size: 1em; }
 
@@ -17,10 +27,13 @@ a {
 table {
   text-align: left; }
 
+.bHead {
+  text-align: center; }
+
 .bucket {
   text-align: center;
   background-image: url(../images/bucket.png);
-  background-size: contain;
+  background-size: 47px;
   background-repeat: no-repeat;
   background-position-x: 50%; }
 
