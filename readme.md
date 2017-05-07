@@ -10,6 +10,4 @@ The browser version is built with Angular and main page can be found at `/app/in
 To access from the browser reliably, run `npm install` then `npm start`.
 The app will be run by default on `localhost:8080/`.
 
-## Live Version
-A live version can be found at [michaeljerwin.com/twobuckets](http://michaeljerwin.com/twobuckets).
 
